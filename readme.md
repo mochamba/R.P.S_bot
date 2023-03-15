@@ -1,0 +1,1 @@
+Simple tg bot implementing a game of rock, paper, scissors in a small conversation
