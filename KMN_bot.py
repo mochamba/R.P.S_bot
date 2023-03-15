@@ -94,6 +94,10 @@ async def cup_invitation(message: types.message):
     game.tour_baner = await game.new_tour()
 
 
+@dp.message_handler(Text(equals="Отмена!"))
+async def glove(message: types.message):
+    pass
+
 @dp.callback_query_handler(Text(equals='accept_cup'))
 async def fingers(call: types.CallbackQuery):
     """Обработчик согласия на турнир."""
